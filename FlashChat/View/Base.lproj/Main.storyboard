@@ -13,7 +13,7 @@
         <!--Welcome View Controller-->
         <scene sceneID="bcb-sh-TRu">
             <objects>
-                <viewController id="cke-RQ-ZyM" customClass="WelcomeViewController" customModule="Flash_Chat_iOS13" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="cke-RQ-ZyM" customClass="WelcomeViewController" customModule="FlashChat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uBB-mT-YYA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -32,7 +32,7 @@
                                     <segue destination="NkH-v9-v0O" kind="show" id="9yQ-m8-cPe"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⚡️FlashChat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CKo-6s-NCK">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⚡️FlashChat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CKo-6s-NCK" customClass="CLTypingLabel" customModule="CLTypingLabel">
                                 <rect key="frame" x="52" y="418" width="310" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="Ppp-1U-8jA"/>
@@ -84,7 +84,7 @@
         <!--Register View Controller-->
         <scene sceneID="cEr-cO-Tu1">
             <objects>
-                <viewController id="kyQ-DQ-Loa" customClass="RegisterViewController" customModule="Flash_Chat_iOS13" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="kyQ-DQ-Loa" customClass="RegisterViewController" customModule="FlashChat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XKD-1t-6Jt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -169,7 +169,7 @@
                     <connections>
                         <outlet property="emailTextfield" destination="gXl-kr-hOC" id="hT5-wp-IFC"/>
                         <outlet property="passwordTextfield" destination="Lr2-T8-1le" id="I0Y-KN-lNd"/>
-                        <segue destination="4Q8-4P-HJl" kind="show" id="ohe-i9-9Ap"/>
+                        <segue destination="4Q8-4P-HJl" kind="show" identifier="RegisterToChat" id="ohe-i9-9Ap"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bt0-VQ-QCM" sceneMemberID="firstResponder"/>
@@ -179,7 +179,7 @@
         <!--Login View Controller-->
         <scene sceneID="nw1-G8-mDQ">
             <objects>
-                <viewController id="NkH-v9-v0O" customClass="LoginViewController" customModule="Flash_Chat_iOS13" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="NkH-v9-v0O" customClass="LoginViewController" customModule="FlashChat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cMO-QK-9ld">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -190,7 +190,7 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textfield" translatesAutoresizingMaskIntoConstraints="NO" id="FWD-cU-Tno">
                                         <rect key="frame" x="0.0" y="20" width="414" height="137"/>
                                     </imageView>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AaM-O2-MKY">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1@2.com" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AaM-O2-MKY">
                                         <rect key="frame" x="49" y="51" width="317" height="45"/>
                                         <color key="textColor" name="BrandBlue"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
@@ -215,7 +215,7 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textfield" translatesAutoresizingMaskIntoConstraints="NO" id="Ah9-Kp-TCO">
                                         <rect key="frame" x="0.0" y="20" width="414" height="137"/>
                                     </imageView>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mDV-K8-d4b">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123456" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mDV-K8-d4b">
                                         <rect key="frame" x="49" y="48" width="317" height="45"/>
                                         <color key="textColor" name="BrandBlue"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
@@ -264,7 +264,7 @@
                     <connections>
                         <outlet property="emailTextfield" destination="AaM-O2-MKY" id="vrj-Br-uXG"/>
                         <outlet property="passwordTextfield" destination="mDV-K8-d4b" id="CIP-er-QIP"/>
-                        <segue destination="4Q8-4P-HJl" kind="show" id="8Ki-yP-Msm"/>
+                        <segue destination="4Q8-4P-HJl" kind="show" identifier="LoginToChat" id="8Ki-yP-Msm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iS8-go-DkS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -274,7 +274,7 @@
         <!--Chat View Controller-->
         <scene sceneID="D75-e4-Q1W">
             <objects>
-                <viewController id="4Q8-4P-HJl" customClass="ChatViewController" customModule="Flash_Chat_iOS13" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="4Q8-4P-HJl" customClass="ChatViewController" customModule="FlashChat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BcY-mQ-V1g">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -343,7 +343,13 @@
                             <constraint firstItem="N1Q-Jq-ZKe" firstAttribute="trailing" secondItem="7S9-N3-sqN" secondAttribute="trailing" id="zKG-bn-1Y8"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="bId-Ja-OqE"/>
+                    <navigationItem key="navigationItem" id="bId-Ja-OqE">
+                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="v8U-n5-LEq">
+                            <connections>
+                                <action selector="logOutPressed:" destination="4Q8-4P-HJl" id="hXj-7g-1Nu"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="messageTextfield" destination="QPG-xB-P5Y" id="fXu-c9-l3T"/>
                         <outlet property="tableView" destination="avT-nH-J84" id="zfR-hV-Cjy"/>
@@ -372,6 +378,9 @@
             <point key="canvasLocation" x="-86.956521739130437" y="134.59821428571428"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="CKo-6s-NCK"/>
+    </designables>
     <inferredMetricsTieBreakers>
         <segue reference="8Ki-yP-Msm"/>
     </inferredMetricsTieBreakers>
